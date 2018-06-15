@@ -1,0 +1,31 @@
+{
+  "name": "twitch-extension-starter",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "serve": "firebase serve -p 8080 --only hosting,functions",
+    "localtunnel": "pm2 start ./dev/localtunnel.sh -- clip-fx 8080",
+    "xlocaltunnel": "pm2 start ./dev/localtunnel.sh -- twitch-extension-starter 8080",
+    "get-runtime-config": "firebase functions:config:get > ./functions/.runtimeconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tooldigital/twitch-extension-starter.git"
+  },
+  "author": "positlabs",
+  "bugs": {
+    "url": "https://github.com/tooldigital/twitch-extension-starter/issues"
+  },
+  "homepage": "https://github.com/tooldigital/twitch-extension-starter#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.6"
+  }
+}

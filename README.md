@@ -37,7 +37,9 @@ Set the Google Cloud project for firebase to use `firebase use {projectID}`. A l
 Set the Twitch variables in the firebase config.
 
 `firebase functions:config:set twitch.client_id=xxxxx`
+
 `firebase functions:config:set twitch.secret=xxxxx`
+
 `firebase functions:config:set twitch.owner_id=xxxxx`
 
 Running `firebase functions:config:get` should give you an object like this:

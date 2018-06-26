@@ -4,10 +4,10 @@
     "source": "functions"
   },
   "hosting": {
-    "public": "public",
+    "public": "client/public",
     "rewrites": [
       {
-        "source": "/color/*",
+        "source": "/message",
         "function": "main"
       }
     ],

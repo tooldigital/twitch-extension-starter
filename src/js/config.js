@@ -1,1 +1,0 @@
-require('../styles/config.scss')

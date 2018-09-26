@@ -4,7 +4,11 @@ Boilerplate for Twitch extensions.
 
 ## Motivations
 
+This project will serve as a cache of learnings from previous extension dev.
+
 This project uses Node 6.14 so it can be deployed to Firebase. The official [Twitch extension boilerplate](https://github.com/twitchdev/extensions-hello-world) uses Node 8, so it won't work out of the box on Firebase.
+
+WARNING: do not use cloud functions for extensions with high traffic spikes. Use appengine with a min number of instances set.
 
 
 ## Twitch extension
@@ -80,3 +84,8 @@ The format of the public url is https://{subdomain}.localtunnel.me. Change your 
 
 `get-runtime-config`: makes a local copy of firebase's remote env variables
 
+## Resources
+
+[JWT token encoder](https://jwt.io)
+
+[Load testing cloud service](https://loader.io/)
